@@ -48,12 +48,14 @@ public class ReverseList {
             listNode = listNode.next;
         }
         ListNode dupHead = head;
+        // 遍历head 链表，去掉 val为-1的结点
         while (dupHead != null) {
             if (dupHead.next == tail) {
                 dupHead.next = null;
             }
             dupHead = dupHead.next;
         }
+        // 打印
         while (head != null) {
             System.out.println(head.val);
             head = head.next;
@@ -71,16 +73,19 @@ public class ReverseList {
         if (head == null) {
             return;
         }
+        // pre 是反转后的链表首结点
         ListNode pre = null;
+        // curr 是传入的链表的每个遍历当前项
         ListNode curr = head;
         while (curr != null) {
+            // 先把 next 独立拿出来，防止等会被覆盖
             ListNode next = curr.next;
             // 来了就做新大哥，新结点往链表的左侧添加
             curr.next = pre;
             pre = curr;
             curr = next;
         }
-
+        // 打印
         while (pre != null) {
             System.out.println(pre.val);
             pre = pre.next;

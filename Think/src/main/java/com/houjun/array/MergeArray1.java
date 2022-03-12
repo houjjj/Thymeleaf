@@ -2,7 +2,10 @@ package com.houjun.array;
 
 import java.util.Arrays;
 
-public class ArrayTest {
+/**
+ * 合并两个数组
+ */
+public class MergeArray1 {
     public static void main(String[] args) {
         int[] a = {1, 3, 5, 7, 10};
         int[] b = {2, 4, 6, 8, 9};

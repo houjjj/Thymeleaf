@@ -8,7 +8,7 @@
         <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Think" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../2021DEV/gradle-6.8.1" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../2022DEV/gradle-7.4-all/gradle-7.4" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Think" />

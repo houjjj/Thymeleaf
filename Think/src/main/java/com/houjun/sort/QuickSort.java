@@ -13,18 +13,15 @@ import java.util.Hashtable;
 public class QuickSort {
 
     public static void main(String[] args) {
-        int[] arr = {1, 3, 2, 5, 0, 8};
+//        int[] arr = {1, 3, 2, 5, 0, 8};
+        int[] arr = {1,  5, 8,7,2,4,3};
         quickSort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
 //        HashMap<Object, Object> hashMap = new HashMap<>();
 //        Hashtable<Object, Object> hashtable = new Hashtable<>();
 //        hashtable.put("c",null);
 //        hashMap.put("a",null);
-        ThreadMXBean threadMXBean = ManagementFactory.getThreadMXBean();
-        ThreadInfo[] threadInfos = threadMXBean.dumpAllThreads(false, false);
-        for (int i = 0; i < threadInfos.length; i++) {
-            System.out.printf("ThreadId:%s,ThreadName:%s %n",threadInfos[i].getThreadId(),threadInfos[i].getThreadName());
-        }
+
     }
 
     public static void quickSort(int[] array, int low, int high) {
@@ -41,7 +38,8 @@ public class QuickSort {
                     array[i] = t;
                 }
             }
-            // 把基准值放到p_pos 所在的下标上
+            // 把基准值放到p_pos 所在的下标上,这样基准值左边的一定比基准值小，右边的一定比他大，
+            // p_pos 在本层递归自增几次，说明基准值右面有几个值小于他
             t = array[low];
             array[low] = array[p_pos];
             array[p_pos] = t;

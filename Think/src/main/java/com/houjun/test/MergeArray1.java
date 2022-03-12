@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.util.*;
 
-public class ArrayTest {
+public class MergeArray1 {
 
     public static void main(String[] args) {
         System.out.println(isValidSudoku2());
