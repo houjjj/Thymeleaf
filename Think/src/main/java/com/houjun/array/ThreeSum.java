@@ -1,14 +1,15 @@
 package com.houjun.array;
 
-import org.junit.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.junit.platform.commons.util.CollectionUtils;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
+/**
+ * cider 面试题
+ * 三数之和
+ */
 public class ThreeSum {
 
 
