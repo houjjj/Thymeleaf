@@ -7,13 +7,12 @@ import java.util.Arrays;
  * 难度：一星
  * 复杂度：O(n^2)
  */
-public class BubbleSort {
+public abstract class BubbleSort {
     public static void main(String[] args) {
         int[] arr = {1, 3, 2, 5, 0, 8};
         bubbleSort(arr);
         System.out.println(Arrays.toString(arr));
     }
-
     public static void bubbleSort(int[] array) {
         for (int i = array.length - 1; i > 0; i--) {
             // 内层循环遍历完后，最大的元素会跑到arr[i]
